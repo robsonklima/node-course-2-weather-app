@@ -18,6 +18,7 @@ const argv = yargs
 geocode.geocodeAddress(argv.address, (errorMessage, geocodeResults) => {
   if (errorMessage) {
     console.log(errorMessage);
+    
   } else {
     console.log(geocodeResults.address);
 
